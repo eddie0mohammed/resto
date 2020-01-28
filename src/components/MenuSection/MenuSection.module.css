@@ -1,0 +1,48 @@
+
+
+.menuSection{
+
+    background-color: lightgrey;
+    height: 65vh;
+    padding: 10rem 15rem;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+
+}
+
+.menuSection__special{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: 8px;
+    font-weight: 500;
+
+}
+
+.menuSection__header{
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+
+
+}
+
+.menuSection__cardContainer{
+    margin-bottom: 5rem;
+
+    height: 25rem;
+    width: 100%;
+    background: black;
+
+}
+
+.menuSection__link{
+
+    text-transform: uppercase;
+    font-weight: 600;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+}

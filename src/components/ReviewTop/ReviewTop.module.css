@@ -1,0 +1,40 @@
+
+
+.review{
+
+    /* padding: 0 15rem; */
+    background: lightgoldenrodyellow;
+
+    
+    
+    
+}
+
+.review__topSection{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.review__quotes{
+    font-size: 8rem;
+}
+
+.review__testimony{
+    padding: 0 18rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.review__person{
+    font-size: 1rem;
+}
+
+.review__mainSection{
+    
+}

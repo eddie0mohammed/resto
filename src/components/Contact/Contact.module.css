@@ -1,0 +1,125 @@
+
+
+.contact{
+    padding: 0 15rem;
+    text-align: center;
+    /* height: 30rem; */
+    background: pink;
+    
+}
+
+.contact__contact{
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.contact__header{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.contact__details{
+
+    display: flex;
+    background: white;
+    width: 100%;
+    margin-top: 4rem;
+    padding: 4rem;
+    position: relative;
+    z-index: 10;
+}
+
+.details__left{
+
+    width: 50%;
+    /* background:lightcoral; */
+    text-align: left;
+
+}
+
+.city{
+    font-size:1.6rem;
+}
+
+.country{
+    color: rgba(0,0,0,0.3);
+
+}
+
+.address{
+    margin-top: 1rem;
+    padding-right: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.email{
+    margin-top: 2rem;
+    font-weight: 400;
+
+}
+
+.email1{
+    font-weight: 700;
+}
+
+.border{
+    /* display: inline-block; */
+    width: 20%;
+    height: 2px;
+    background:black;
+    margin-top: 8rem;
+
+}
+
+.details__right{
+
+    width: 50%;
+    /* background:lightcyan; */
+    text-align:left;
+
+
+}
+
+.call{
+    font-weight: 600;
+}
+
+.number{
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.lunch{
+    font-weight: 600;
+}
+
+.p1{
+    margin-top: 0.75rem;
+}
+
+.p2{
+    margin-top: 0.5rem;
+}
+
+.dinner{
+    margin-top: 2.5rem;
+    font-weight: 600;
+}
+
+.p3{
+    margin-top: 0.75rem;
+}
+
+.maps{
+    width: 100%;
+    height: 30rem;
+    z-index: -1;
+    margin-top: -5rem;
+    
+
+}

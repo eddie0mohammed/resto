@@ -1,0 +1,82 @@
+
+
+.topSection{
+
+    padding: 0 15rem;
+    
+    background: lightblue;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: relative;
+
+}
+
+.welcome{
+    font-size: 2rem;
+}
+
+.firstBlock{
+
+    position: relative;
+    top: 40%;
+    right: 0;
+    transform: translate(0, -50%);
+    /* margin-top: 30rem; */
+}
+
+.welcome{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 1rem;
+    margin-right: -8px;
+    
+}
+
+.mainHeader{
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.secondBlock{
+   /* margin-top: 47rem; */
+   position: absolute;
+   bottom: 0;
+   right: 15rem;
+}
+
+.book{
+    text-align: right;
+    font-size: 8px;
+    padding-bottom: 5px;
+
+}
+
+.phone{
+    text-align: right;
+    font-size: 2rem;
+    /* padding: 0.5rem 0; */
+
+}
+
+.hours{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 8px;
+    padding: 1rem 0;
+
+}
+
+.days{
+    font-weight: 600;
+    
+
+}
+
