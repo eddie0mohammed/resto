@@ -3,7 +3,7 @@
 .promotion{
 
     /* height: 30rem; */
-    background: lightblue;
+    background-color: lightgray;
     padding: 10rem 15rem;
 
     text-align: center;
@@ -42,6 +42,9 @@
 
 .firstrow__cell1{
     width: 33.333%;
+    background-image: url('https://source.unsplash.com/Qwk6U_umGrE');
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -79,6 +82,9 @@
 
 .firstrow__cell3{
     width: 33.333%;
+    background-image: url('https://source.unsplash.com/u80jsyR2C3Q');
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -91,7 +97,9 @@
 
 .secondrow__cell2{
     width: 33.333%;
-    
+    background-image: url('https://source.unsplash.com/Qi7NlvF-ZsY');
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -103,5 +111,5 @@
 
 .img{
     height: 100%;
-    background: black;
+    /* background: black; */
 }

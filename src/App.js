@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 
-import Header from './components/Header/Header';
-import TopSection from './components/TopSection/TopSection';
-import ReservationSection from './components/ReservationSection/ReservationSection';
-import MenuSection from './components/MenuSection/MenuSection';
-import ReviewTop from './components/ReviewTop/ReviewTop';
-import ReviewBottom from './components/ReviewBottom/ReviewBottom';
-import Promotion from './components/Promotion/Promotion';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import {Switch, Route} from 'react-router-dom';
+
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+// import Gallery from './pages/Gallery/Gallery';
+import Menu from './pages/Menu/Menu';
+// import Reservations from './pages/Reservations/Reservations';
+
+
 
 class App extends React.Component {
 
@@ -18,25 +18,21 @@ class App extends React.Component {
 
   
     return (
-      <div className="App main">
+      <div className="App">
 
-        <Header />
 
-        <TopSection />
+        <Switch>
 
-        <ReservationSection />
+          <Route path='/' exact component={Home}/>
+          <Route path='/about' exact component={About} />
+          {/* <Route path='/gallery' exact component={Gallery} /> */}
+          <Route path='/menu' exact component={Menu} />
+          {/* <Route path='/reservations' exact component={Reservations} /> */}
 
-        <MenuSection />
 
-        <ReviewTop />
+        </Switch>
 
-        <ReviewBottom />
-
-        <Promotion />
-
-        <Contact />
-
-        <Footer />
+        
                 
       </div>
     );

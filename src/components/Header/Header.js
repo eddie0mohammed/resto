@@ -2,6 +2,8 @@ import React from 'react';
 
 import styles from './Header.module.css';
 
+import {NavLink} from 'react-router-dom';
+
 
 class Header extends React.Component{
 
@@ -11,15 +13,16 @@ class Header extends React.Component{
 
             <div className={styles.header}>
 
-                <h4>LOGO</h4>
+                <h4 className={styles.logo}>LOGO</h4>
                 <nav className={styles.navbar}>
-                    <p className={styles.navlinks}>Home</p>
-                    <p className={styles.navlinks}>About</p>
-                    <p className={styles.navlinks}>Menu</p>
-                    <p className={styles.navlinks}>Gallery</p>
-                    <p className={styles.navlinks}>Reservations</p>
+                    <NavLink to='/' exact activeClassName={styles.selected} className={styles.navlinks}>Home</NavLink>
+                    <NavLink to="/about" exact activeClassName={styles.selected} className={styles.navlinks}>About</NavLink>
+                    <NavLink to="/menu" exact  activeClassName={styles.selected} className={styles.navlinks}>Menu</NavLink>
+                    {/* <NavLink to='/gallery' exact activeClassName={styles.selected}  className={styles.navlinks}>Gallery</NavLink> */}
+                    {/* <NavLink to='/reservations' exact activeClassName={styles.selected}  className={styles.navlinks}>Reservations</NavLink> */}
 
                 </nav>
+                <button className={styles.reservations}>Reservations</button>
             </div>
         )
     }

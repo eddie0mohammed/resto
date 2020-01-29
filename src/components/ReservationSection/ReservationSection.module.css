@@ -2,7 +2,7 @@
 .reservationSection{
     
     height: 100vh;
-    background: lightcoral;
+    /* background: lightcoral; */
     padding: 0 15rem;
 
 
@@ -14,7 +14,7 @@
     width: 45%;
     margin-right: 5%;
 
-    background: pink;
+    /* background: pink; */
 
 }
 
@@ -47,12 +47,26 @@
     margin-top: 5rem;
     padding: 1rem;
     border: 1px solid #000;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
 }
 
 .right{
 
     width: 50%;
     /* background :blue; */
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+
 }
 
 .img{

@@ -3,6 +3,8 @@ import React from 'react';
 
 import styles from './ReservationSection.module.css';
 
+import {Link} from 'react-router-dom';
+
 
 class ReservationSection extends React.Component{
 
@@ -19,12 +21,12 @@ class ReservationSection extends React.Component{
                     
                     <p className={styles.who}><span className={styles.chef}>Thomas Eggsy</span> - Master Chef</p>
 
-                    <p className={styles.reservation}>Reservation</p>
+                    <Link to='/reservations' className={styles.reservation}>Reservation</Link>
                 </div>
 
                 <div className={styles.right}>
-                    <div className={styles.img}>x</div>
-                    {/* <img className={styles.img} src="https://source.unsplash.com/random" alt="reservation"/> */}
+                    <div className={styles.overlay}>&nbsp;</div>
+                    <img className={styles.img} src="https://source.unsplash.com/jeiqzOgwwKU" alt="reservation"/>
                 </div>
 
             </div>

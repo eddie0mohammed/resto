@@ -32,17 +32,57 @@
 .menuSection__cardContainer{
     margin-bottom: 5rem;
 
-    height: 25rem;
+    height: 20rem;
     width: 100%;
-    background: black;
+    /* background: #fff; */
+
+    display: flex;
+    justify-content: space-between;
+    /* background: pink; */
+
 
 }
+
+.menuSection__card{
+
+    padding: 1rem;
+
+    width: calc((100% - 3rem) / 3);
+    /* background:red; */
+    text-align:center;
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+.card__img{
+
+    width: 100%;
+    height: 10rem;
+    background-image: url('https://source.unsplash.com/jeiqzOgwwKU');
+    background-size: cover;
+    background-position: center;
+
+    
+    
+
+}
+
+.card__header{
+
+    margin-top: 2rem;
+}
+
+.card__desc{
+    margin-top: 0.5rem;
+}
+
 
 .menuSection__link{
 
     text-transform: uppercase;
     font-weight: 600;
-    /* text-decoration: underline; */
+    text-decoration: none;
+    color: black;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 
 }
