@@ -6,11 +6,105 @@ import styles from './Menu.module.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
+import {menu} from './menuData';
+
 
 class Menu extends React.Component{
 
+
+    renderSignatureDishes = () => {
+        const {signature } = menu;
+
+        return signature.map((elem, i) => {
+                
+            return  (  
+                    <div key={i} className={styles.container__row}>
+
+                        <img className={styles.dish__img} src={elem.img} alt={elem.name}></img>
+
+                        <div className={styles.dish__details}>
+                            <h4 className={styles.details__header}>{elem.name}</h4>
+                            <p className={styles.details__desc}>{elem.content}</p>
+                        </div>
+
+                        <p  className={styles.dish__price}>{elem.price}</p>
+                    </div>
+            )
+    })}
+
+    renderMainDishesLeft = () => {
+        const {mainLeft} = menu;
+
+        return mainLeft.map((elem, i) => {
+            return (
+                <div key={i} className={styles.row}>
+                    <div className={styles.row__desc}>
+                        <h4 className={styles.row__header}>{elem.name}</h4>
+                        <p className={styles.row__content}>{elem.content}</p>
+                    </div>
+                    <p className={styles.row__price}>{elem.price}</p>
+                </div>
+            )
+        })
+
+    }
+    renderMainDishesRight = () => {
+        const {mainRight} = menu;
+
+        return mainRight.map((elem, i) => {
+            return (
+                <div key={i} className={styles.row}>
+                    <div className={styles.row__desc}>
+                        <h4 className={styles.row__header}>{elem.name}</h4>
+                        <p className={styles.row__content}>{elem.content}</p>
+                    </div>
+                    <p className={styles.row__price}>{elem.price}</p>
+                </div>
+            )
+        })
+
+    }
+
+    renderDaily1 = () => {
+        const {dailyRow1} = menu;
+
+        return dailyRow1.map((elem, i) => {
+            
+            return (
+                
+                <div key={i} className={styles.special__cell} style={{backgroundImage: `url(${elem.img}`}}>
+                    <div className={styles.cell__content}>
+                        <h4 className={styles.content__header}>{elem.name}</h4>
+                        <p className={styles.content__desc}>{elem.content}</p>
+
+                        <p className={styles.content__price}>{elem.price}</p>
+                    </div>
+                </div>
+            )
+        })
+    }
+
+    renderDaily2 = () => {
+        const {dailyRow2} = menu;
+
+        return dailyRow2.map((elem, i) => {
+            return (
+                <div key={i} className={styles.special__cell} style={{backgroundImage: `url(${elem.img})`}}>
+                    <div className={styles.cell__content}>
+                        <h4 className={styles.content__header}>{elem.name}</h4>
+                        <p className={styles.content__desc}>{elem.content}</p>
+
+                        <p className={styles.content__price}>{elem.price}</p>
+                    </div>
+                </div>
+            )
+        })
+    }
     
     render(){
+
+        
+        
 
         return(
             <div className={styles.menu}>
@@ -28,54 +122,8 @@ class Menu extends React.Component{
 
 
                     <div className={styles.dishes__container}>
-
-                        <div className={styles.container__row}>
-
-                            <div className={styles.dish__img}></div>
-
-                            <div className={styles.dish__details}>
-                                <h4 className={styles.details__header}>Imported Salmon Steak</h4>
-                                <p className={styles.details__desc}>Salmon / Veggies / Oil</p>
-                            </div>
-
-                            <p  className={styles.dish__price}>$20</p>
-                        </div>
-
-                        <div className={styles.container__row}>
-
-                            <div className={styles.dish__img}></div>
-
-                            <div className={styles.dish__details}>
-                                <h4 className={styles.details__header}>Imported Salmon Steak</h4>
-                                <p className={styles.details__desc}>Salmon / Veggies / Oil</p>
-                            </div>
-
-                            <p  className={styles.dish__price}>$20</p>
-                        </div>
-
-                        <div className={styles.container__row}>
-
-                            <div className={styles.dish__img}></div>
-
-                            <div className={styles.dish__details}>
-                                <h4 className={styles.details__header}>Imported Salmon Steak</h4>
-                                <p className={styles.details__desc}>Salmon / Veggies / Oil</p>
-                            </div>
-
-                            <p  className={styles.dish__price}>$20</p>
-                        </div>
-
-                        <div className={styles.container__row}>
-
-                            <div className={styles.dish__img}></div>
-
-                            <div className={styles.dish__details}>
-                                <h4 className={styles.details__header}>Imported Salmon Steak</h4>
-                                <p className={styles.details__desc}>Salmon / Veggies / Oil</p>
-                            </div>
-
-                            <p  className={styles.dish__price}>$20</p>
-                        </div>
+                        {this.renderSignatureDishes()}
+                        
                     </div>
 
                 </div>
@@ -93,78 +141,19 @@ class Menu extends React.Component{
 
                         <div className={styles.main__left}>
 
-                            <div className={styles.row}>
-                                <div className={styles.row__desc}>
-                                    <h4 className={styles.row__header}>Imported Salmon Steak</h4>
-                                    <p className={styles.row__content}>Salmon / Veggies / Oil</p>
-                                </div>
-                                <p className={styles.row__price}>$20</p>
-                            </div>
-
-                            <div className={styles.row}>
-                                <div className={styles.row__desc}>
-                                    <h4 className={styles.row__header}>Imported Salmon Steak</h4>
-                                    <p className={styles.row__content}>Salmon / Veggies / Oil</p>
-                                </div>
-                                <p className={styles.row__price}>$20</p>
-                            </div>
-
-                            <div className={styles.row}>
-                                <div className={styles.row__desc}>
-                                    <h4 className={styles.row__header}>Imported Salmon Steak</h4>
-                                    <p className={styles.row__content}>Salmon / Veggies / Oil</p>
-                                </div>
-                                <p className={styles.row__price}>$20</p>
-                            </div>
-
-                            <div className={styles.row}>
-                                <div className={styles.row__desc}>
-                                    <h4 className={styles.row__header}>Imported Salmon Steak</h4>
-                                    <p className={styles.row__content}>Salmon / Veggies / Oil</p>
-                                </div>
-                                <p className={styles.row__price}>$20</p>
-                            </div>
-                            
+                            {this.renderMainDishesLeft()}
 
                         </div>
 
                         <div className={styles.main__right}>
-                            <div className={styles.row}>
-                                <div className={styles.row__desc}>
-                                    <h4 className={styles.row__header}>Imported Salmon Steak</h4>
-                                    <p className={styles.row__content}>Salmon / Veggies / Oil</p>
-                                </div>
-                                <p className={styles.row__price}>$20</p>
-                            </div>
-
-                            <div className={styles.row}>
-                                <div className={styles.row__desc}>
-                                    <h4 className={styles.row__header}>Imported Salmon Steak</h4>
-                                    <p className={styles.row__content}>Salmon / Veggies / Oil</p>
-                                </div>
-                                <p className={styles.row__price}>$20</p>
-                            </div>
-
-                            <div className={styles.row}>
-                                <div className={styles.row__desc}>
-                                    <h4 className={styles.row__header}>Imported Salmon Steak</h4>
-                                    <p className={styles.row__content}>Salmon / Veggies / Oil</p>
-                                </div>
-                                <p className={styles.row__price}>$20</p>
-                            </div>
-
-                            <div className={styles.row}>
-                                <div className={styles.row__desc}>
-                                    <h4 className={styles.row__header}>Imported Salmon Steak</h4>
-                                    <p className={styles.row__content}>Salmon / Veggies / Oil</p>
-                                </div>
-                                <p className={styles.row__price}>$20</p>
-                            </div>
+                            {this.renderMainDishesRight()}
                         </div>
                         
                     </div>
 
                 </div>
+
+
                 {/* SPECIAL */}
                 <div className={styles.special}>
                         
@@ -176,66 +165,13 @@ class Menu extends React.Component{
 
                             <div className={styles.special__row}>
 
-                                <div className={styles.special__cell}>
-                                    <div className={styles.cell__content}>
-                                        <h4 className={styles.content__header}>Imported Salmon Steak</h4>
-                                        <p className={styles.content__desc}>Salmon / Veggies / Oil</p>
-
-                                        <p className={styles.content__price}>$20</p>
-                                    </div>
-                                </div>
-
-                                <div className={styles.special__cell}>
-                                    <div className={styles.cell__content}>
-                                        <h4 className={styles.content__header}>Imported Salmon Steak</h4>
-                                        <p className={styles.content__desc}>Salmon / Veggies / Oil</p>
-
-                                        <p className={styles.content__price}>$20</p>
-                                    </div>
-                                </div>
-
-                                <div className={styles.special__cell}>
-                                    <div className={styles.cell__content}>
-                                        
-                                        <h4 className={styles.content__header}>Imported Salmon Steak</h4>
-                                        <p className={styles.content__desc}>Salmon / Veggies / Oil</p>
-
-                                        <p className={styles.content__price}>$20</p>
-                                    </div>
-                                </div>
-
+                                {this.renderDaily1()}
                             </div>
 
                             {/* second row */}
                             <div className={styles.special__row}>
 
-                                <div className={styles.special__cell}>
-                                    <div className={styles.cell__content}>
-                                        <h4 className={styles.content__header}>Imported Salmon Steak</h4>
-                                        <p className={styles.content__desc}>Salmon / Veggies / Oil</p>
-
-                                        <p className={styles.content__price}>$20</p>
-                                    </div>
-                                </div>
-
-                                <div className={styles.special__cell}>
-                                    <div className={styles.cell__content}>
-                                        <h4 className={styles.content__header}>Imported Salmon Steak</h4>
-                                        <p className={styles.content__desc}>Salmon / Veggies / Oil</p>
-
-                                        <p className={styles.content__price}>$20</p>
-                                    </div>
-                                </div>
-
-                                <div className={styles.special__cell}>
-                                    <div className={styles.cell__content}>
-                                        
-                                        <h4 className={styles.content__header}>Imported Salmon Steak</h4>
-                                        <p className={styles.content__desc}>Salmon / Veggies / Oil</p>
-
-                                        <p className={styles.content__price}>$20</p>
-                                    </div>
-                                </div>
+                                {this.renderDaily2()}
 
                             </div>
 
