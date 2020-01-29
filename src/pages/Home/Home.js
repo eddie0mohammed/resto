@@ -13,6 +13,7 @@ import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
 
 
+
 class Home extends React.Component{
 
 
@@ -27,12 +28,11 @@ class Home extends React.Component{
         return (
             <div className={styles.home}>
 
-
-                <Header />
+                <Header modalHandler={this.props.modalHandler}/>
 
                 <TopSection text={topSection}/>
 
-                <ReservationSection />
+                <ReservationSection showModal={this.props.showModal}/>
 
                 <MenuSection />
 

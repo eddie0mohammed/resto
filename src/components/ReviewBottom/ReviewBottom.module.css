@@ -65,17 +65,23 @@
     justify-content: flex-end;
     margin-top: 2rem;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .arrows .left{
     padding: 0.5rem;
     color: lightgrey;
 }
+.arrows .left:hover{
+    color: black;
+}
 
 .arrows .right{
     padding: 0.5rem;
     padding-right: 0;
-    
-    
+
+}
+.arrows .right:hover{
+    color: black;
 }
 

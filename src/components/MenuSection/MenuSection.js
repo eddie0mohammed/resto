@@ -5,48 +5,104 @@ import styles from './MenuSection.module.css';
 
 import {Link} from 'react-router-dom';
 
+import {menu} from './menuData';
+
 
 class MenuSection extends React.Component{
 
+    state = {
+        data: menu,
+        count: 0
+    }
+
+    onIncrement = () => {
+        let max = this.state.data.length - 1;
+        let currentCount = this.state.count;
+
+        if (currentCount + 1 > max){
+            currentCount = 0;
+        }else{
+            currentCount++;
+        }
+        this.setState({
+            count: currentCount
+        });
+    }
+
+    onDecrement = () => {
+        let max = this.state.data.length - 1;
+        let currentCount = this.state.count;
+
+        if (currentCount - 1 < 0){
+            currentCount = max;
+        }else{
+            currentCount--;
+        }
+        this.setState({
+            count: currentCount
+        });
+    }
+
+    renderCards = () => {
+        let currentSet = this.state.data.filter((elem, i) => i === this.state.count)[0];
+        
+        return currentSet.map(elem => {
+            return  (
+                <React.Fragment key={elem.header}>
+                    <div className={`${styles.menuSection__card}`}>
+
+                        <img className={styles.card__img} src={elem.img} alt={elem.header}/>
+
+                        <h4 className={styles.card__header}>{elem.header}</h4>
+
+                        <p className={styles.card__desc}>{elem.body}</p>
+
+                    </div>
+
+                    {/* <div className={`${styles.menuSection__card}`}>
+
+                        <div className={styles.card__img}>&nbsp;</div>
+
+                        <h4 className={styles.card__header}>{elem.header}</h4>
+
+                        <p className={styles.card__desc}>{elem.body}</p>
+
+                    </div>
+
+                    <div className={`${styles.menuSection__card}`}>
+
+                        <div className={styles.card__img}>&nbsp;</div>
+
+                        <h4 className={styles.card__header}>{elem.header}</h4>
+
+                        <p className={styles.card__desc}>{elem.body}</p>
+
+                    </div> */}
+                </React.Fragment>
+                    )
+        })
+    }
 
     render(){
 
+        // console.log(this.state.count);
+        
         return (
             <div className={styles.menuSection}>
-
+                
                 <p className={styles.menuSection__special}>Special Menu</p>
                 <h4 className={styles.menuSection__header}>Delicious Flavour of Autumn</h4>
 
                 <div className={styles.menuSection__cardContainer}>
+
+                    <div className={styles.arrow__container}>
+                       <p className={styles.arrow__left} onClick={this.onDecrement}>&larr;</p>
+                    </div>
                     
-                    <div className={`${styles.menuSection__card} ${styles.menuSection__card1}`}>
+                    {this.renderCards()}
 
-                        <div className={styles.card__img}></div>
-
-                        <h4 className={styles.card__header}>Super BBQ Grill No Smoke</h4>
-
-                        <p className={styles.card__desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ipsa!</p>
-
-                    </div>
-
-                    <div className={`${styles.menuSection__card} ${styles.menuSection__card2}`}>
-
-                        <div className={styles.card__img}>&nbsp;</div>
-
-                        <h4 className={styles.card__header}>Queen of Autumn</h4>
-
-                        <p className={styles.card__desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ipsa!</p>
-
-                    </div>
-
-                    <div className={`${styles.menuSection__card} ${styles.menuSection__card3}`}>
-
-                        <div className={styles.card__img}>&nbsp;</div>
-
-                        <h4 className={styles.card__header}>Royal Liver Fried</h4>
-
-                        <p className={styles.card__desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ipsa!</p>
-
+                    <div className={styles.arrow__container}>
+                        <p className={styles.arrow__right} onClick={this.onIncrement}>&rarr;</p>
                     </div>
                 </div>
 

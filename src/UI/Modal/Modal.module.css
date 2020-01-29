@@ -1,0 +1,17 @@
+
+.modal{
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+
+    border: 1px solid white;
+    background: rgba(0,0,0,0.7);
+
+    display: none;
+
+    
+}

@@ -3,3 +3,135 @@
     position: relative;
 }
 
+.philosophy{
+    width: 100%;
+    /* height: 30rem; */
+    /* background: pink; */
+
+    padding: 10rem 15rem;
+
+    text-align: center;
+}
+
+.philosophy__header{
+    font-size: 3rem;
+    
+}
+
+.border{
+    width: 20%;
+    margin: 0 auto;
+    background:rgba(0,0,0,0.8);
+    font-size: 3px;
+    margin-top: 1rem;
+}
+
+.content{
+
+    margin-top: 3rem;
+    /* background: yellow; */
+    width: 100%;
+
+    display: flex;
+}
+
+
+.content__left{
+    width: 40%;
+}
+
+.left__img{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://source.unsplash.com/random');
+    background-size: cover;
+    background-position: center;
+}
+
+.content__right{
+    width: 60%;
+    padding: 3rem;
+}
+
+.right__desc{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+
+/* ////////////////// */
+
+
+.review{
+
+    /* padding: 0 15rem; */
+    background-image: url('https://source.unsplash.com/cpkPJ-U9eUM');
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+
+    z-index: -1;
+    color: white;
+    
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.review__topSection{
+    /* height: 30rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 1;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.review__quotes{
+    font-size: 3rem;
+    
+}
+
+.star{
+    padding: 1rem;
+}
+
+.review__testimony{
+    margin-top: 1rem;
+    padding: 0 18rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.review__person{
+    font-size: 1rem;
+}
+
+.chef__img{
+    width: 10rem;
+    height: 10rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.chef__name{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}

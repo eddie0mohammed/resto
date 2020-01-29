@@ -3,8 +3,6 @@ import React from 'react';
 
 import styles from './ReservationSection.module.css';
 
-import {Link} from 'react-router-dom';
-
 
 class ReservationSection extends React.Component{
 
@@ -21,7 +19,7 @@ class ReservationSection extends React.Component{
                     
                     <p className={styles.who}><span className={styles.chef}>Thomas Eggsy</span> - Master Chef</p>
 
-                    <Link to='/reservations' className={styles.reservation}>Reservation</Link>
+                    <button className={styles.reservation} onClick={this.props.showModal}>Reservation</button>
                 </div>
 
                 <div className={styles.right}>

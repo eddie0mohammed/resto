@@ -22,7 +22,7 @@ class Header extends React.Component{
                     {/* <NavLink to='/reservations' exact activeClassName={styles.selected}  className={styles.navlinks}>Reservations</NavLink> */}
 
                 </nav>
-                <button className={styles.reservations}>Reservations</button>
+                <button className={styles.reservations} onClick={this.props.modalHandler}>Reservations</button>
             </div>
         )
     }

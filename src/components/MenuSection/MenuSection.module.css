@@ -58,12 +58,9 @@
 
     width: 100%;
     height: 10rem;
-    background-image: url('https://source.unsplash.com/jeiqzOgwwKU');
+    /* background-image: url('https://source.unsplash.com/jeiqzOgwwKU');
     background-size: cover;
-    background-position: center;
-
-    
-    
+    background-position: center; */
 
 }
 
@@ -86,3 +83,29 @@
     border-bottom: 1px solid rgba(0,0,0,0.2);
 
 }
+
+.arrow__container{
+    /* background:red; */
+    align-self: center;
+    cursor: pointer;
+}
+
+.arrow__left{
+    font-size: 2rem;
+    margin-left: -2rem;
+    color: grey;
+    
+}
+
+.arrow__right{
+    font-size: 2rem;
+    margin-right: -3rem;
+    color: black;
+}
+
+.arrow__left:hover,
+.arrow__right:hover{
+    color: black;
+}
+
+

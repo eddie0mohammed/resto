@@ -3,6 +3,8 @@ import React from 'react';
 
 import styles from './Footer.module.css';
 
+import {Link } from 'react-router-dom';
+
 
 class Footer extends React.Component{
 
@@ -14,10 +16,10 @@ class Footer extends React.Component{
                 <div className={styles.footer__logo}>LOGO</div>
 
                 <nav className={styles.footer__nav}>
-                    <p className={styles.reservations}>Reservations</p>
-                    <p className={styles.functions}>Functions</p>
-                    <p className={styles.contact}>Contact</p>
-                    <p className={styles.reviews}>Reviews & Media</p>
+                    <Link to="/" className={styles.home}>Home</Link>
+                    <Link to='/about' className={styles.about}>About</Link>
+                    <Link to='/menu' className={styles.menu}>Menu</Link>
+                    
                     
                 </nav>
 
