@@ -13,7 +13,7 @@ class Footer extends React.Component{
         return (
             <div className={styles.footer}>
 
-                <div className={styles.footer__logo}>LOGO</div>
+                <div className={styles.footer__logo}><ion-icon name="restaurant"></ion-icon></div>
 
                 <nav className={styles.footer__nav}>
                     <Link to="/" className={styles.home}>Home</Link>

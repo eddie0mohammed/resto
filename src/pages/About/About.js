@@ -16,7 +16,7 @@ class About extends React.Component{
 
         const topSection = {
             welcome: 'About Us',
-            heading1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, doloremque!',
+            heading1: 'Our aim is to connect the neighborhood to a dining experience in the same way ingredients are connected to food.',
             heading2: ''
         }
 
@@ -39,7 +39,7 @@ class About extends React.Component{
                         </div>
 
                         <div className={styles.content__right}>
-                            <p className={styles.right__desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eos accusamus hic reiciendis quis nulla iusto officia, alias neque eaque sunt ipsa esse, mollitia eligendi sit id? Eligendi illo quibusdam iusto quidem animi! Fugiat aut veniam quaerat ea quas expedita illum beatae architecto nihil eum? Temporibus ullam voluptates hic facilis.</p>
+                            <p className={styles.right__desc}>Our mission is simple: Enhance and educate the palate with the freshest ingredients and flavors, while surprising and exciting each guest with personal care and service. We’re all about offering smart, healthy, on-the-go people, smart, healthy, on-the-go food.</p>
                             
                         </div>
 

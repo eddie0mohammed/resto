@@ -23,6 +23,15 @@
     margin-top: 2rem;
 }
 
+.footer__logo ion-icon{
+    font-size: 5rem;
+    border: 1px solid white;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    
+}
+
 .footer__nav{
     display: flex;
     /* background: pink; */
@@ -53,4 +62,10 @@
 .footer__icons ion-icon{
     padding: 0 0.5rem;
     margin-bottom: 4rem;
+    cursor: pointer;
+}
+
+.footer__icons ion-icon:hover{
+    transform: scale(1.2);
+    color: rbga(0,0,0,0.5);
 }

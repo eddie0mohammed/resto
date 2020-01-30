@@ -125,7 +125,9 @@
 .chef__img{
     width: 10rem;
     height: 10rem;
-    background: white;
+    background-image: url('https:source.unsplash.com/v3OlBE6-fhU');
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
 }
 

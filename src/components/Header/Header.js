@@ -13,7 +13,7 @@ class Header extends React.Component{
 
             <div className={styles.header}>
 
-                <h4 className={styles.logo}>LOGO</h4>
+                <h4 className={styles.logo}><ion-icon name="restaurant"></ion-icon></h4>
                 <nav className={styles.navbar}>
                     <NavLink to='/' exact activeClassName={styles.selected} className={styles.navlinks}>Home</NavLink>
                     <NavLink to="/about" exact activeClassName={styles.selected} className={styles.navlinks}>About</NavLink>

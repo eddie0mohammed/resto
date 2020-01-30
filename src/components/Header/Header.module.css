@@ -25,6 +25,13 @@
     /* margin-right: auto; */
 }
 
+.logo ion-icon{
+    font-size: 3rem;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
 .navbar{
     /* margin-left: 10rem; */
     /* background: red; */
