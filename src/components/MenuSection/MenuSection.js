@@ -51,7 +51,12 @@ class MenuSection extends React.Component{
                 <React.Fragment key={elem.header}>
                     <div className={`${styles.menuSection__card}`}>
 
-                        <img className={styles.card__img} src={elem.img} alt={elem.header}/>
+                        <div className={styles.card__imgContainer}>
+                            <img className={styles.card__img} src={elem.img} alt={elem.header}/>
+
+                            <p className={styles.price}>{elem.price}</p>
+
+                        </div>
 
                         <h4 className={styles.card__header}>{elem.header}</h4>
 
@@ -59,25 +64,7 @@ class MenuSection extends React.Component{
 
                     </div>
 
-                    {/* <div className={`${styles.menuSection__card}`}>
-
-                        <div className={styles.card__img}>&nbsp;</div>
-
-                        <h4 className={styles.card__header}>{elem.header}</h4>
-
-                        <p className={styles.card__desc}>{elem.body}</p>
-
-                    </div>
-
-                    <div className={`${styles.menuSection__card}`}>
-
-                        <div className={styles.card__img}>&nbsp;</div>
-
-                        <h4 className={styles.card__header}>{elem.header}</h4>
-
-                        <p className={styles.card__desc}>{elem.body}</p>
-
-                    </div> */}
+                    
                 </React.Fragment>
                     )
         })
