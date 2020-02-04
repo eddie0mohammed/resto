@@ -17,6 +17,21 @@
 
 
     color: white;
+
+
+}
+
+
+@media (max-width: 1024px){
+    .topSection{
+        padding: 0 4rem;
+
+    }
+}
+@media (max-width: 728px){
+    .topSection{
+        padding: 0 2rem;
+    }
 }
 
 .overlay{
@@ -28,36 +43,64 @@
     background: rgba(0,0,0,0.5);
 }
 
-.welcome{
-    font-size: 2rem;
-    
-}
-
 .firstBlock{
 
     position: relative;
     top: 40%;
     right: 0;
     transform: translate(0, -50%);
-    /* margin-top: 30rem; */
+
+    /* background: pink; */
 }
 
+@media (min-width: 2000px){
+    .firstBlock{
+        width: 40%;
+        margin: 0 auto ;
+        
+    }  
+}
+@media (min-width: 1200px){
+    .firstBlock{
+        width: 70%;
+        margin: 0 auto ;
+        
+    }  
+}
+
+
+
 .welcome{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
     text-align: right;
     letter-spacing: 1rem;
     margin-right: -8px;
+    margin-bottom: 1rem;
     
 }
 
 .mainHeader{
     text-align: right;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 4rem;
     line-height: 4rem;
 }
+@media (min-width: 1200px){
+
+    .welcome{
+        font-size: 2rem;
+    }
+    .mainHeader{
+        font-size: 6rem;
+        line-height: 6rem;
+        
+    }  
+}
+
+
+
 
 .secondBlock{
    /* margin-top: 47rem; */
@@ -66,9 +109,32 @@
    right: 15rem;
 }
 
+@media (min-width: 1200px){
+    .secondBlock{
+        right: 20%;
+        transform: translate(-8%, 0%);
+        
+    }  
+}
+
+
+@media (max-width: 1024px){
+    .secondBlock{
+        padding: 0 4rem;
+        right: 0
+
+    }
+}
+@media (max-width: 728px){
+    .secondBlock{
+        padding: 0 2rem;
+        right: 0;
+    }
+}
+
 .book{
     text-align: right;
-    font-size: 8px;
+    font-size: 1.4rem;
     padding-bottom: 5px;
 
 }
@@ -83,7 +149,7 @@
 .hours{
     text-align: right;
     text-transform: uppercase;
-    font-size: 8px;
+    font-size: 1.4;
     padding: 1rem 0;
 
 }
@@ -92,5 +158,16 @@
     font-weight: 600;
     
 
+}
+
+@media (max-width: 1024px){
+    .book, .hours{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 728px){
+    .book, .hours{
+        font-size: 0.8rem;
+    }
 }
 

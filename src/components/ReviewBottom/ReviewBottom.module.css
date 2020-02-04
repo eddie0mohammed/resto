@@ -1,11 +1,31 @@
 
 .reviewBottom{
 
-    padding: 0 15rem;
+    padding: 10rem 15rem;
     /* height: 30rem; */
     /* background: pink; */
 
     display: flex;
+}
+
+@media (min-width: 1200px){
+    .reviewBottom{
+        padding: 10rem 20rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1024px){
+    .reviewBottom{
+        padding: 5rem 4rem;
+    }
+}
+
+@media (max-width: 728px){
+    .reviewBottom{
+        padding: 5rem 2rem;
+    }
 }
 
 .reviewBottom__left{
@@ -29,37 +49,73 @@
 }
 
 .review{
-    margin-top: 8rem;
-    font-size: 1rem;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1rem;
     margin-right: -1rem;
     
 }
 
+@media (max-width: 1024px){
+    .review{
+        font-size: 1.2rem;
+    }
+}
+
 .heading{
+    font-size:2.5rem;
     margin-top: 1rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px){
+    .heading{
+        font-size: 2.2rem;
+    }
 }
 
 .testimonial{
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
+    margin-top: 2rem;
 }
+
 
 .description{
     line-height: 2rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
 
 }
 
 .person{
-    margin-top: 1rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+
 }
 .name{
     font-weight: 600;
+    font-size: 1.5rem;
+
 }
+
+@media (min-width:1200px){
+    .testimonial,.description,.person, .name{
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .testimonial,.description,.person, .name{
+        font-size: 1.2rem;
+    }
+
+}
+
 .arrows{
     display: flex;
     justify-content: flex-end;
@@ -68,9 +124,21 @@
     cursor: pointer;
 }
 
+@media (min-width: 1200px){
+    .arrows{
+        font-size: 2.5rem;
+    }
+}
+
 .arrows .left{
     padding: 0.5rem;
     color: lightgrey;
+}
+@media (min-width: 1200px){
+    .arrows .left{
+        padding: 1rem;
+        
+    }
 }
 .arrows .left:hover{
     color: black;
@@ -80,6 +148,14 @@
     padding: 0.5rem;
     padding-right: 0;
 
+}
+@media (min-width: 1200px){
+    .arrows .right{
+        padding: 1rem;
+        padding-right: 0;
+
+        
+    }
 }
 .arrows .right:hover{
     color: black;

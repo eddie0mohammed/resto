@@ -1,24 +1,52 @@
 
 
 .contact{
-    padding: 0 15rem;
+    padding: 0rem 15rem;
+    padding-top: 10rem;
     text-align: center;
     /* height: 30rem; */
     background: lightgray;
     
 }
 
+@media (max-width: 1024px){
+    .contact{
+        padding: 0rem 4rem;
+        padding-top: 10rem;
+
+    }
+}
+
+@media (max-width: 728px){
+    .contact{
+        padding: 0 2rem;
+        padding-top: 10rem;
+        
+    }
+}
+
 .contact__contact{
     text-transform: uppercase;
     letter-spacing: 1rem;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1024px){
+    .contact__contact{
+        font-size: 1.2rem;
+    }
 }
 
 .contact__header{
     margin-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
+}
+@media (max-width: 1024px){
+    .contact__header{
+        font-size: 2.5rem;
+    }
 }
 
 .contact__details{
@@ -34,6 +62,14 @@
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 }
 
+@media (min-width: 1200px){
+    .contact__details{
+        max-width: 80%;
+        margin: 4rem auto 0 auto;
+        
+    }
+}
+
 .details__left{
 
     width: 50%;
@@ -42,10 +78,21 @@
 
 }
 
+@media (min-width: 1200px){
+    .details__left{
+        padding: 2rem;
+    }
+}
+
 .city{
     font-size:1.6rem;
 }
 
+@media (min-width: 1200px){
+    .city{
+        font-size: 2rem;
+    }
+}
 .country{
     color: rgba(0,0,0,0.3);
 
@@ -54,10 +101,26 @@
 .address{
     margin-top: 1rem;
     padding-right: 1rem;
-    line-height: 1.5rem;
+    line-height: 2.2rem;
     font-weight: 600;
 }
 
+@media (min-width: 1200px){
+    .address{
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .address{
+        line-height: 2rem;
+    }
+}
+@media (max-width: 728px){
+    .address{
+        line-height: 1.5rem;
+    }
+}
 .email{
     margin-top: 2rem;
     font-weight: 400;
@@ -84,6 +147,11 @@
     text-align:left;
 
 
+}
+@media (min-width: 1200px){
+    .details__right{
+        padding: 2rem;
+    }
 }
 
 .call{
@@ -115,6 +183,31 @@
 
 .p3{
     margin-top: 0.75rem;
+}
+
+.address, .email, .call, .lunch, .p1, .p2, .dinner, .p3{
+    font-size: 1.4rem;
+    
+}
+
+@media (min-width: 1200px){
+    .address, .email, .call, .lunch, .p1, .p2, .dinner, .p3{
+        font-size: 1.5rem;
+        
+    }
+}
+
+@media (max-width: 1024px){
+    .address, .email, .call, .lunch, .p1, .p2, .dinner, .p3{
+        font-size: 1.2rem;
+        
+    }
+}
+@media (max-width: 728px){
+    .address, .email, .call, .lunch, .p1, .p2, .dinner, .p3{
+        font-size: 1rem;
+        
+    }
 }
 
 .maps{

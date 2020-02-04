@@ -1,14 +1,49 @@
 
 .reservationSection{
     
-    height: 100vh;
+    /* height: 100vh; */
     /* background: lightcoral; */
-    padding: 0 15rem;
+    padding: 20rem 15rem;
 
-
+    
     display: flex;
+    justify-content: center;
     align-items: center;
+    
 }
+@media (max-width: 1024px){
+    .reservationSection{
+        padding: 10rem 4rem;
+
+    }
+}
+@media (max-width: 728px){
+    .reservationSection{
+        padding: 5rem 2rem;
+        
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 100%; */
+    /* background: yellow; */
+    
+}
+
+@media (max-width: 728px){
+    .container{
+        flex-direction: column;
+        /* margin: 10rem 0; */
+    }
+}
+
+
+
+
 
 .left{
     width: 45%;
@@ -18,24 +53,88 @@
 
 }
 
+@media (min-width: 1200px){
+    .left{
+        
+        max-width: 30%;
+        
+    }
+}
+
+
+@media (max-width: 728px){
+    .left{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+
 .story{
-    font-size: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1rem;
     padding: 1rem 0;
 }
 
-.header{
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+@media (min-width: 1200px){
+    .story{
+        font-size: 1.4rem;
+        
+    }
 }
 
+/* @media (max-width: 1024px){
+    .story{
+        font-size: 1rem
+
+    }
+}
+@media (max-width: 728px){
+    .story{
+        padding: 0 2rem;
+    }
+} */
+
+
+.header{
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+}
+
+@media (min-width: 1200px){
+    .header{
+        font-size: 4rem;
+        
+    }
+}
+
+/* @media (max-width: 1024px){
+    .header{
+        
+
+    }
+}
+@media (max-width: 728px){
+    .header{
+        
+    }
+} */
+
+
+
 .description{
-    line-height: 1.8rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
 }
 
 .who{
-    margin-top: 3rem;
+    margin-top: 4rem;
+    font-size: 1.5rem;
 }
 
 .chef{
@@ -63,8 +162,24 @@
 .right{
 
     width: 50%;
+    /* height: 50%; */
     /* background :blue; */
     position: relative;
+}
+
+@media (min-width: 1200px){
+    .right{
+        max-width: 30%
+    }
+}
+
+@media (max-width: 728px){
+    .right{
+        order: 0;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
 }
 
 .overlay{
@@ -80,7 +195,19 @@
 .img{
     width: 90%;
     margin-left: 10%;
-    height: 33rem;
+    height: 40rem;
 
     background: black;
+}
+
+@media (max-width: 728px){
+
+    .overlay{
+        width: 100%;
+    }
+    .img{
+        
+        width: 100%;
+        margin-left: 0;
+    }
 }
