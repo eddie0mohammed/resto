@@ -58,9 +58,11 @@ class MenuSection extends React.Component{
 
                         </div>
 
-                        <h4 className={styles.card__header}>{elem.header}</h4>
+                        <div className={styles.innercard__right}>
+                            <h4 className={styles.card__header}>{elem.header}</h4>
 
-                        <p className={styles.card__desc}>{elem.body}</p>
+                            <p className={styles.card__desc}>{elem.body}</p>
+                        </div>
 
                     </div>
 
@@ -85,7 +87,7 @@ class MenuSection extends React.Component{
                     <div className={styles.arrow__container}>
                        <p className={styles.arrow__left} onClick={this.onDecrement}>&larr;</p>
                     </div>
-                    
+
                     {this.renderCards()}
 
                     <div className={styles.arrow__container}>

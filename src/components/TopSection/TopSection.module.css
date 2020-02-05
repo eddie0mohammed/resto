@@ -93,10 +93,16 @@
         font-size: 2rem;
     }
     .mainHeader{
-        font-size: 6rem;
-        line-height: 6rem;
+        font-size: 5rem;
+        line-height: 5rem;
         
     }  
+}
+
+@media (max-width: 1024px){
+    .mainHeader{
+        font-size: 3.5rem;
+    }
 }
 
 
