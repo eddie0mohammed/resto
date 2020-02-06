@@ -51,20 +51,41 @@
 
 @media (max-width: 728px){
     .review__topSection{
-        height: 30rem;
+        /* height: 30rem; */
         
     }
 }
-
 .review__quotes{
     font-size: 15rem;
 }
 
 .review__testimony{
+
     margin-top: -3rem;
     padding: 0 10rem;
     font-size: 4rem;
     margin-bottom: 3rem;
+
+}
+
+@media (max-width: 1024px){
+    .review__testimony{
+        padding: 0 6px;
+    }
+}
+
+@media (min-width: 1200px){
+    .review__testimony{
+        width: 75%;
+        line-height: 5rem;
+    }
+}
+
+@media (min-width: 1600px){
+    .review__testimony{
+        width: 65%;
+
+    }
 }
 
 .review__person{

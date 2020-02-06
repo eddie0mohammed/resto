@@ -5,8 +5,14 @@
     /* background: white; */
 }
 
+@media (max-width: 728px){
+    .reservations{
+        padding: 1rem;
+    }
+}
+
 .reservations__header{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -14,11 +20,24 @@
     margin-top: 2rem;
 }
 
+@media (max-width: 1024px){
+    .reservations__header{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 728px){
+    .reservations__header{
+        font-size: 2rem;
+    }
+}
+
 .border{
     width: 10rem;
     background: white;
     margin: 0.5rem auto;
-    font-size: 2px;
+    font-size: 1px;
+    margin-top: 1rem;
 }
 
 .reservations__form{
@@ -26,10 +45,16 @@
 }
 
 .first{
-    margin-top: 5rem;
+    margin-top: 1rem;
     width: 100%;
     /* background: yellow; */
     display: flex;
+}
+
+@media (max-width: 728px){
+    .first{
+        flex-direction: column;
+    }
 }
 
 .second{
@@ -38,6 +63,12 @@
     /* background: yellow; */
     display: flex;
 }
+@media (max-width: 728px){
+    .second{
+        flex-direction: column;
+        margin-top: 0;
+    }
+}
 
 .third{
     margin-top: 1rem;
@@ -45,6 +76,13 @@
     /* background: yellow; */
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+}
+
+@media (max-width: 728px){
+    .third{
+        margin-top: 0;
+    }
 }
 
 .cell{
@@ -56,11 +94,23 @@
     flex-direction: column;
 }
 
+@media (max-width: 728px){
+    .cell{
+        width: 100%;
+    }
+}
+
 .label{
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 600;
     color: white;
+}
+
+@media (max-width: 728px){
+    .label{
+        font-size: 1.2rem;
+    }
 }
 
 .input{
@@ -71,6 +121,12 @@
     border-bottom: 1px solid white;
     background: transparent;
     color: white;
+}
+
+@media (max-width: 728px){
+    .input{
+        margin-top: 0;
+    }
 }
 
 .input:focus{
@@ -94,6 +150,12 @@
     outline: none;
 }
 
+@media (max-width: 728px){
+    .textarea{
+        margin-top: 0;
+        height: 7rem;
+    }
+}
 
 .btn__container{
     display: flex;
@@ -103,7 +165,9 @@
     
 
     margin-top: 5rem;
+    font-size: 1.2rem;
     border: none;
+    border-radius: 5px;
     padding: 1rem 2rem;
     background: transparent;
     color: white;
@@ -116,6 +180,24 @@
 .submit:hover{
     background: white;
     color: black;
+}
+
+@media (min-width: 1200px){
+    .submit{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .submit{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 728px){
+    .submit{
+        margin-top: 1rem;
+    }
 }
 
 .cross{

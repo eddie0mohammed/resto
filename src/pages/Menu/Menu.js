@@ -113,6 +113,7 @@ class Menu extends React.Component{
 
                 <div className={styles.topSection}>
                     <h2 className={styles.topSection__header}>Our Menu</h2>
+                    <div className={styles.overlay}></div>
                 </div>
 
                 {/* SIGNATURE */}
@@ -131,7 +132,7 @@ class Menu extends React.Component{
 
                 {/* MAIN */}
 
-                <div className={`${styles.signature} ${styles.maindishes}`} >
+                <div className={styles.maindishes} >
                     <div className={styles.overlay}></div>
                     <h2 className={styles.signature__header} style={{position: 'relative', zIndex: '3'}}>Main Dishes</h2>
                     <p className={styles.border} style={{background: 'white', zIndex: '3', position: 'relative'}}>&nbsp;</p>
@@ -157,7 +158,7 @@ class Menu extends React.Component{
                 {/* SPECIAL */}
                 <div className={styles.special}>
                         
-                        <h2 className={styles.special__header}>Daily Specialities</h2>
+                        <h2 className={styles.special__header}>Daily Specials</h2>
                         <p className={styles.border}>&nbsp;</p>
 
 

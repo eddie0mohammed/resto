@@ -85,13 +85,13 @@ class MenuSection extends React.Component{
                 <div className={styles.menuSection__cardContainer}>
 
                     <div className={styles.arrow__container}>
-                       <p className={styles.arrow__left} onClick={this.onDecrement}>&larr;</p>
+                       <p className={styles.arrow__left} onClick={this.onDecrement}><ion-icon name="arrow-dropleft"></ion-icon></p>
                     </div>
 
                     {this.renderCards()}
 
                     <div className={styles.arrow__container}>
-                        <p className={styles.arrow__right} onClick={this.onIncrement}>&rarr;</p>
+                        <p className={styles.arrow__right} onClick={this.onIncrement}><ion-icon name="arrow-dropright"></ion-icon></p>
                     </div>
                 </div>
 

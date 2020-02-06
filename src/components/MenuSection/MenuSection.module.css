@@ -156,6 +156,7 @@
     .card__imgContainer{
         width: 50%;
         height: 100%;
+        
     }
 }
 
@@ -187,6 +188,7 @@
 @media (max-width: 728px){
     .card__img{
         height: 100%;
+
         
     }
 }
