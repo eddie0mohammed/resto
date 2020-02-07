@@ -23,7 +23,7 @@ class Contact extends React.Component{
                         <h2 className={styles.city}>Melbourne, <span className={styles.country}>Australia</span></h2>
                         <p className={styles.address}>269 King St, 5th Floor, Utah Building, Melbourne, VIC 3000, Australia</p>
 
-                        <p className={styles.email}><span className={styles.email1}>Email</span>: info@restaurant.com</p>
+                        <p className={styles.email}><span className={styles.email1}>Email</span>: info@tableaubistro.com</p>
                         <p className={styles.border}>&nbsp;</p>
                     </div>
 
@@ -44,7 +44,7 @@ class Contact extends React.Component{
 
             </div>
             <div className={styles.maps}>
-                <iframe title="maps" className={styles.map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1610504.290695561!2d143.93213755398625!3d-37.96508117696273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2smu!4v1580151894683!5m2!1sen!2smu" width="100%" height="100%" frameBorder="0"  ></iframe>
+                <iframe title='uniq' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.9813021990203!2d144.9521151159078!3d-37.81390694182581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4910f700d1%3A0xdb88fff3c20811d0!2sKing%20St%2FLa%20Trobe%20St!5e0!3m2!1sen!2smu!4v1581060866356!5m2!1sen!2smu" width="100%" height="100%" frameBorder="0"></iframe>
             </div>
             </React.Fragment>
         )

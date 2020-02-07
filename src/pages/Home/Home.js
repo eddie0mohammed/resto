@@ -21,7 +21,7 @@ class Home extends React.Component{
 
         const topSection = {
             welcome: 'welcome',
-            heading1: 'Prime Beef Steak',
+            heading1: 'Tableau Bar Bistro',
             heading2: 'Restaurant'
         }
 

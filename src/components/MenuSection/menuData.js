@@ -37,7 +37,7 @@ export const menu = [
         {
             header: 'Mediterranean Style Beef',
             body: 'Mediterranean style beef served with garlic aioli, tomato and lettuce salad',
-            img: 'https://source.unsplash.com/Qwk6U_umGrE',
+            img: 'https://source.unsplash.com/Yr4n8O_3UPc',
             price: '$23'
 
 
@@ -71,7 +71,7 @@ export const menu = [
         {
             header: 'Turkish Steak and Salad',
             body: 'Mediterranean style beef served with garlic aioli, tomato and lettuce salad',
-            img: 'https://source.unsplash.com/Xk0jQPZseMk',
+            img: 'https://source.unsplash.com/SzBZVEryGY4',
             price: '$23'
 
 

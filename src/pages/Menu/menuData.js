@@ -3,30 +3,30 @@ export const menu = {
 
     signature: [
         {
-            name: "Imported Salmon Steak",
-            content: 'Salmon / Veggies / Oil',
+            name: "Imported Angus Steak",
+            content: 'Beef / Veggies /Herbs',
             price: '$19.99',
-            img: 'https://source.unsplash.com/random'
+            img: 'https://source.unsplash.com/auIbTAcSH6E'
         },
         {
             name: "Kobe Beef with Salad",
             content: 'Beef / Salad / Nut',
             price: '$22.19',
-            img: 'https://source.unsplash.com/random'
-
-        },
-        {
-            name: "Beyond Meat Burger",
-            content: 'Beef / Fries / Cheese',
-            price: '$17.99',
-            img: 'https://source.unsplash.com/random'
+            img: 'https://source.unsplash.com/eGPlT_RXzi8'
 
         },
         {
             name: "Southern Fried Chicken",
+            content: 'Beef / Fries / Cheese',
+            price: '$17.99',
+            img: 'https://source.unsplash.com/mjcJ0FFgdWI'
+
+        },
+        {
+            name: "Our Signature Cheeseburger",
             content: 'Chicken / Veggies / Chipotle',
-            price: '$21.99',
-            img: 'https://source.unsplash.com/random'
+            price: '$15.99',
+            img: 'https://source.unsplash.com/sc5sTPMrVfk'
 
         }
 
@@ -34,24 +34,24 @@ export const menu = {
 
     mainLeft: [
         {
-            name: "Imported Salmon Steak",
-            content: 'Salmon / Veggies / Oil',
+            name: "Yakitori Beef",
+            content: 'Beef / Veggies / Seasonings',
             price: '$19.99',
         },
         {
-            name: "Kobe Beef with Salad",
-            content: 'Beef / Salad / Nut',
-            price: '$22.19',
+            name: "Burmese Chicken Curry",
+            content: 'Chicken / Salad / Nut',
+            price: '$20.19',
 
         },
         {
-            name: "Beyond Meat Burger",
-            content: 'Beef / Fries / Cheese',
+            name: "Turkey Stuffed Peppers",
+            content: 'Turkey / Veggies / Cheese',
             price: '$17.99',
 
         },
         {
-            name: "Southern Fried Chicken",
+            name: "Chicken Pot Pie",
             content: 'Chicken / Veggies / Chipotle',
             price: '$21.99',
 
@@ -60,51 +60,51 @@ export const menu = {
 
     mainRight: [
         {
-            name: "Imported Salmon Steak",
-            content: 'Salmon / Veggies / Oil',
-            price: '$19.99',
-        },
-        {
-            name: "Kobe Beef with Salad",
-            content: 'Beef / Salad / Nut',
-            price: '$22.19',
-
-        },
-        {
-            name: "Beyond Meat Burger",
-            content: 'Beef / Fries / Cheese',
-            price: '$17.99',
-
-        },
-        {
-            name: "Southern Fried Chicken",
-            content: 'Chicken / Veggies / Chipotle',
+            name: "Pot Roasted Steak",
+            content: 'Beef / Salad / Dressings',
             price: '$21.99',
+        },
+        {
+            name: "Baked Tereyaki Chicken",
+            content: 'Chicken / Salad / Nut',
+            price: '$16.99',
+
+        },
+        {
+            name: "Salsa Chicken",
+            content: 'Chicken / Salsa / Cheese',
+            price: '$19.99',
+
+        },
+        {
+            name: "Salisbury Steak",
+            content: 'Beef / Salad / Mushrooms',
+            price: '$20.99',
 
         }
     ],
 
     dailyRow1: [
         {
-            name: "Imported Salmon Steak",
-            content: 'Salmon / Veggies / Oil',
-            price: '$19.99',
-            img: 'https://source.unsplash.com/random'
+            name: "Southern Turkish Kebap",
+            content: 'Meat / Veggies / Fries',
+            price: '$15.99',
+            img: 'https://source.unsplash.com/Qwk6U_umGrE'
 
         },
         {
-            name: "Kobe Beef with Salad",
-            content: 'Beef / Salad / Nut',
-            price: '$22.19',
-            img: 'https://source.unsplash.com/random'
+            name: "Lamb Chops with Fries and Salad",
+            content: 'Lamb / Salad / Fries',
+            price: '$19.59',
+            img: 'https://source.unsplash.com/HMbjq6BucM8'
 
 
         },
         {
-            name: "Beyond Meat Burger",
+            name: "Our Signature Burger",
             content: 'Beef / Fries / Cheese',
             price: '$17.99',
-            img: 'https://source.unsplash.com/random'
+            img: 'https://source.unsplash.com/-GFCYhoRe48'
 
 
         }
@@ -112,25 +112,25 @@ export const menu = {
     ],
     dailyRow2: [
         {
-            name: "Imported Salmon Steak",
-            content: 'Salmon / Veggies / Oil',
+            name: "Quarted Pounder Steak",
+            content: 'Beef / Red Sauce / Nuts',
             price: '$19.99',
-            img: 'https://source.unsplash.com/random'
+            img: 'https://source.unsplash.com/M0lUxgLnlfk'
             
         },
         {
-            name: "Kobe Beef with Salad",
-            content: 'Beef / Salad / Nut',
+            name: "Medium Rare Steak",
+            content: 'Beef / Salad / Herbs',
             price: '$22.19',
-            img: 'https://source.unsplash.com/random'
+            img: 'https://source.unsplash.com/O67LZfeyYBk'
 
 
         },
         {
-            name: "Beyond Meat Burger",
-            content: 'Beef / Fries / Cheese',
+            name: "Prime Angus Steak",
+            content: 'Beef / Veggies / Herbs',
             price: '$17.99',
-            img: 'https://source.unsplash.com/random'
+            img: 'https://source.unsplash.com//L21clPieSus'
 
 
         }

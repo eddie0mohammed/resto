@@ -12,7 +12,7 @@
     background: rgba(0,0,0,0.7);
 
     display: none;
-    overflow: scroll;
+    /* overflow: scroll; */
 
     
 }
@@ -21,7 +21,7 @@
     .modal{
         width: 80%;
         /* height: 80%; */
-        overflow: scroll;
+        /* overflow: scroll; */
     }
 }
 

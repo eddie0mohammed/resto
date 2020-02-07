@@ -25,7 +25,7 @@ class ReservationSection extends React.Component{
 
                     <div className={styles.right}>
                         <div className={styles.overlay}>&nbsp;</div>
-                        <img className={styles.img} src="https://source.unsplash.com/jeiqzOgwwKU" alt="reservation"/>
+                        <img className={styles.img} src="https://source.unsplash.com/QXSvbDkiJmY" alt="reservation"/>
                     </div>
                 </div>
 

@@ -58,7 +58,7 @@ class About extends React.Component{
                             <ion-icon name="star" className={styles.stars}></ion-icon>
                             <ion-icon name="star" className={styles.stars}></ion-icon>
                         </h2>
-                        <h2 className={styles.review__testimony}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium nesciunt dolorem asperiores facilis eum! Repellendus enim in ea nulla iusto?</h2>
+                        <h2 className={styles.review__testimony}>If you are a chef, no matter how good a chef you are, it's not good cooking for yourself; the joy is in cooking for others - it's the same with music.</h2>
                         
                         <div className={styles.chef__img}>&nbsp;</div>
                         <p className={styles.chef__name}>Jason Bennet</p>

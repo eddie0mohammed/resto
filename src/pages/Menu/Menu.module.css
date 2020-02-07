@@ -57,7 +57,7 @@
 
 @media (max-width: 728px){
     .signature{
-        padding: 6rem 1rem;
+        padding: 6rem 0rem;
     }
 }
 
@@ -137,8 +137,8 @@
 }
 
 .dish__img{
-    width: 8rem;
-    height: 8rem;
+    width: 9rem;
+    height: 9rem;
     background-image: url('https://source.unsplash.com/M0lUxgLnlfk');
     background-size: cover;
     background-position: center;
@@ -158,8 +158,9 @@
 
 @media (min-width: 1200px){
     .dish__img{
-        width: 10rem;
-        height: 10rem;
+        width: 12rem;
+        height: 12rem;
+        margin-right: 2rem;
     }
 }
 
@@ -222,7 +223,7 @@
 /* main */
 
 .maindishes{
-    background-image: url('https://source.unsplash.com/random');
+    background-image: url('https://source.unsplash.com/poI7DelFiVA');
     background-size: cover;
     background-position: center;
     color: white;
