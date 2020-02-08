@@ -13,7 +13,7 @@ Features:
 SCRIPTS:
 
 1.  Install
-  npm install
+  - npm install
 
 2.  Start
-  npm start
+  - npm start
